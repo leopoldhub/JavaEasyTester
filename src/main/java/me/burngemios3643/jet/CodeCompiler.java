@@ -102,7 +102,7 @@ public class CodeCompiler {
 	@SuppressWarnings("deprecation")
 	public void run(String args) throws IOException {
 		Runtime rt = Runtime.getRuntime();
-		final Process process = rt.exec("java -cp .;"+tmpclass.getParentFile().getAbsolutePath()+" "+tmpclass.getName().substring(0, tmpclass.getName().lastIndexOf("."))+" "+args);
+		final Process process = rt.exec("java -cp "+tmpclass.getParentFile().getAbsolutePath()+" "+tmpclass.getName().substring(0, tmpclass.getName().lastIndexOf("."))+" "+args);
 	    
 	    System.out.println("======================");
 	    System.out.println("  STARTING EXECUTION  ");
