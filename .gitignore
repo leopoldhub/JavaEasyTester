@@ -5,7 +5,8 @@
 build
 .project
 .classpath
-.gitignore
+.settings
 gradle
 bin
+
 
